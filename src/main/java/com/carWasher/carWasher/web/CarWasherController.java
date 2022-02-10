@@ -39,7 +39,7 @@ public class CarWasherController {
     public ModelAndView fordJsp()
     {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("name","ford");
+        modelAndView.addObject("name","Ford Mustang");
         modelAndView.setViewName("ford");
 
         return modelAndView;
