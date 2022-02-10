@@ -44,4 +44,13 @@ public class CarWasherController {
 
         return modelAndView;
     }
+
+    @RequestMapping("/cacheBustingTest")
+    public ModelAndView cacheBustinTest()
+    {
+        ModelAndView modelAndView = new ModelAndView();
+
+        modelAndView.setViewName("cacheBustingTest");
+        return modelAndView;
+    }
 }
