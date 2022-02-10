@@ -5,6 +5,7 @@ import com.carWasher.carWasher.model.Driver;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 
 import java.util.ArrayList;
@@ -32,5 +33,15 @@ public class CarWasherController {
 
          return cars;
 
+    }
+
+    @RequestMapping("carNameFord")
+    public ModelAndView fordJsp()
+    {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject("name","ford");
+        modelAndView.setViewName("ford");
+
+        return modelAndView;
     }
 }
